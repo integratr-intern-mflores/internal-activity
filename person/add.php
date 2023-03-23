@@ -35,7 +35,7 @@
 
         
 
-         <input type="submit" value="Store Person" class="btn btn-primary"></input>
+         <input type="submit" name="submit_person" value="Store Person" class="btn btn-primary">
 
          </form>
 </div>
