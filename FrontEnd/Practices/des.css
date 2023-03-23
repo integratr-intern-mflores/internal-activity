@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(0, 22, 148);
+}
+
+table{
+    color: darkslategray; 
+    background-color: 
+    blanchedalmond;
+
+}
+ul{
+    color: slateblue;
+     background-color:
+      blanchedalmond;
+}
+
+.box{
+    height: 1000px;
+    width: 1000px ;
+    background-color: red;
+    margin: 100px;
+    padding: 100px;
+    border: 10px solid white;
+    /* position:absolute;
+    top: 200px;
+    left: 0; */
+}
+ 
+#jsID{
+    height: 1000px;
+    width: 1000px ;
+    background-color: blue;
+    margin: 100px;
+    padding: 100px;
+    border: 10px solid white;
+}
