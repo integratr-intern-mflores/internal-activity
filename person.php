@@ -20,6 +20,7 @@
   </thead>
   <?php
     while ($person = $query-> fetch_assoc()){
+      $id = $person['id'];
         echo "<tr>
         
         <td>" . $person ['id'] . "</td>
@@ -27,7 +28,9 @@
         <td>". $person ['gender']."</td>
         <td>". $person ['birthday']."</td>
         <td>". $person ['place_of_birth']."</td>
-
+        <td> <a href = 'person/update.php?id=" .$person ['id']. "'class='btn btn-primary'>Update</a>
+        &nbsp;<a href='person/delete.php?id=$id' class = 'btn btn-danger' onclick='return confirm(\"Are you sure you want to delete this record\")'>Delete</a></td>
+         
         </tr>";
 
     }
