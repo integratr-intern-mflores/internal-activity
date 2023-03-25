@@ -7,7 +7,6 @@ $birthday = $_POST ['birthday'];
 
 if (isset($_POST['submit_person'])){
    
-
     $sql = "INSERT INTO persons(name, place_of_birth, birthday, gender) VALUES
      ('$name','$place_of_birth', '$birthday', '$gender' )";
 
@@ -24,5 +23,5 @@ elseif(isset($_POST['update_persons'])){
 
      $query = $conn->query($sql) or die ($conn->error);
      $_SESSION['success'] =  "Person Successfully updated";
-     
+     header("Location: ../person.php");
 }
